@@ -1,4 +1,4 @@
-# Nesta pasta farei meus trabalhos para o curso de Introdução à Redes de Computadores!
+# Neste repositório farei meus trabalhos para o curso de Introdução à Redes de Computadores com Python!
 
 ## UNIFEI 
 
