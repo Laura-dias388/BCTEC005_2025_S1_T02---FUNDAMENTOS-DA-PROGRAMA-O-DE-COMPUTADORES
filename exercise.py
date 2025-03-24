@@ -1,24 +1,36 @@
 print(f"=====================================================================================================")
 print(f"Exercício 1")
 
-nome = input("Digite seu nome?: ")
-idade = input("Digite sua idade?: ")
-cidade = input("Em qual cidade você mora?: ")
+def input_function():
+   
+    nome = input("Digite seu nome?: ")
+    idade = input("Digite sua idade?: ")
+    cidade = input("Em qual cidade você mora?: ")
 
-print(f"Olá, {nome}, sua idade é {idade} anos")
-print(f"Você mora em {cidade}")
+    # nome deve ser string, idade deve ser inteiro e cidade deve ser string
+
+
+    print(f"Olá, {nome}, sua idade é {idade} anos")
+    print(f"Você mora em {cidade}")    
+input_function()
+
 
 print(f"=====================================================================================================")
 
 print(f"Exercício 2")
 
-nome2 = "Laura Vital"
-idade2 = 36
-altura2 = 1.63
+def types():
 
-print(nome2)
-print(idade2)
-print(altura2)
+    nome2 = "Laura Vital"
+    idade2 = 36
+    altura2 = 1.63
+    
+    # nome2 deve ser string idade2 deve ser inteiro e altura2 deve ser float
+
+    print(nome2)
+    print(idade2)
+    print(altura2)
+
 
 print(f"=====================================================================================================")
 

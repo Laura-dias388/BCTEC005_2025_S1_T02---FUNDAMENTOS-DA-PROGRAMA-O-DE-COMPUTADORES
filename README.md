@@ -63,3 +63,10 @@ exibir os resultados das operações de forma clara:
   c- Calcule a média aritmética dos três números.
 
 </details>
+
+<details>
+  <summary><strong>Upgrade do exercícios</strong></summary><br />
+
+  Irei transformar meus exercícios em funções com validações e tratamentos de erros.
+
+</details>
