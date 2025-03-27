@@ -1,6 +1,6 @@
 print(f"========================================================================================")
 
-limite_por_tripulante = 500
+limite_por_tripulante = 200
 
 nome_comandante=input("Nome do astronauta comandante da missão: ")
 distancia= float(input("Distancia da Terra ate Marte (em milhoes de km): ")) # a média é de 225 milhões de quilômetros.
@@ -9,6 +9,7 @@ consumo_combustivel=float(input("Consumo de combustível por milhão de km (em l
 custo=float(input("Custo do litro de combustível (em reais): "))
 refeicao= int(input("Quantidade média de refeições por dia por tripulante: "))
 duracao=float(input("Duração estimada da viagem (em dias): "))
+print(f"Cada tripulante poderá levar apenas uma mochila e uma mala.")
 volume_mochila = float(input("Volume da sua mochila (em litros): "))
 volume_mala = float(input("Volume da mala (em litros): "))
 
