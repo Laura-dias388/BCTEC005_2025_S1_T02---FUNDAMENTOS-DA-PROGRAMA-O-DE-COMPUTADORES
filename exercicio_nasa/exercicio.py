@@ -6,7 +6,7 @@ limite_por_tripulante = 80
 nome_comandante=input("Nome do astronauta comandante da missão: ")
 distancia= float(input("Distancia da Terra ate Marte (em milhoes de km): ")) # a média é de 225 milhões de quilômetros.
 quantidade_de_tripulantes= int(input("Quantidade de tripulantes na nave: "))
-consumo_combustivel=float(input("Consumo de combustível por milhão de km (em litros): ")) # 5000 toneladas ≈ 70.422.537litros
+consumo_combustivel=float(input("Consumo de combustível por milhão de km (em litros): ")) # 5000 toneladas ≈ 70.422.537 litros
 custo=float(input("Custo do litro de combustível (em reais): ")) 
 refeicao= int(input("Quantidade média de refeições por dia por tripulante: "))
 duracao=float(input("Duração estimada da viagem (em dias): ")) # código feito na aula
@@ -42,3 +42,6 @@ print(f"O volume total disponível é: {volume_total_disponivel}")
 print(f"O volume utilizado foi de: {volume_utilizado}")
 print(f"========================================================================================")
 print(f"O espaço restante é de: {espaço_restante}")
+
+if espaço_restante <= 0:
+  print(f">>>>>Limite de peso excedido, retorne e reduza sua bagagem!<<<<<")
