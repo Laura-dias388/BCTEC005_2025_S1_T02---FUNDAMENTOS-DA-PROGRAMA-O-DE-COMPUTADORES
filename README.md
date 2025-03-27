@@ -37,7 +37,8 @@
 
   Volume da mala escolhida por cada tripulante (em média, em litros)
 
-  Regras para o cálculo
+  Regras para o cálculo:
+  
   Cada tripulante pode levar uma mochila e uma mala
 
   Volume total disponível: quantidade_de_tripulantes * limite_por_tripulante

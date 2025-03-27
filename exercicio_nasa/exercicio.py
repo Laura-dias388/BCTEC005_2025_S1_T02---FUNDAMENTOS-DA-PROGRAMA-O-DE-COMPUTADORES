@@ -1,15 +1,18 @@
 print(f"========================================================================================")
 
-limite_por_tripulante = 200
+# defini o limite de bagagem por tripulante com valor fixo
+limite_por_tripulante = 80
 
 nome_comandante=input("Nome do astronauta comandante da missão: ")
 distancia= float(input("Distancia da Terra ate Marte (em milhoes de km): ")) # a média é de 225 milhões de quilômetros.
 quantidade_de_tripulantes= int(input("Quantidade de tripulantes na nave: "))
-consumo_combustivel=float(input("Consumo de combustível por milhão de km (em litros): "))
-custo=float(input("Custo do litro de combustível (em reais): "))
+consumo_combustivel=float(input("Consumo de combustível por milhão de km (em litros): ")) # 5000 toneladas ≈ 70.422.537litros
+custo=float(input("Custo do litro de combustível (em reais): ")) 
 refeicao= int(input("Quantidade média de refeições por dia por tripulante: "))
-duracao=float(input("Duração estimada da viagem (em dias): "))
-print(f"Cada tripulante poderá levar apenas uma mochila e uma mala.")
+duracao=float(input("Duração estimada da viagem (em dias): ")) # código feito na aula
+print(f"========================================================================================")
+print(f">>>>>Cada tripulante poderá levar apenas uma mochila e uma mala<<<<<")
+print(f"========================================================================================")
 volume_mochila = float(input("Volume da sua mochila (em litros): "))
 volume_mala = float(input("Volume da mala (em litros): "))
 
@@ -26,7 +29,6 @@ volume_total_disponivel = quantidade_de_tripulantes * limite_por_tripulante
 volume_utilizado = quantidade_de_tripulantes * (volume_mochila + volume_mala)
   
 espaço_restante = volume_total_disponivel - volume_utilizado
-
 
 
 print(f"Nome do astronauta comandante da missão: {nome_comandante}")
