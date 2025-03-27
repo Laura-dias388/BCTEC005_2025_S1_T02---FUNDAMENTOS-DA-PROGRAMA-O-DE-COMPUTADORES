@@ -2,9 +2,15 @@ print(f"========================================================================
 print(f"Exercício 1")
 
 def input_function():
-   
     nome = input("Digite seu nome?: ")
-    idade = input("Digite sua idade?: ")
+   
+    while True:
+        try:
+            idade = int(input("Digite sua idade?: "))
+            break
+        except ValueError:
+            print("Por favor, digite um número válido para a idade.")
+            
     cidade = input("Em qual cidade você mora?: ")
 
     # nome deve ser string, idade deve ser inteiro e cidade deve ser string
