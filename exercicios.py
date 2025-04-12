@@ -20,15 +20,14 @@ else:
 
 print(f"=============================================================================")
 
-key_master = str(input(f"Você está em posse da Chave Mestra (Sim/Não): "))
+choise = str(input(f"Você está em posse da Chave Mestra (Sim/Não): "))
 
-key_master_true = key_master == "Sim"
-
-type_key = type(key_master_true)
-print(type_key)
-
-if key_master_true == "Sim":
-  print(f"Uall Você pode seguir seu caminho pelos templo dos códigos fragmentados!!")
+if choise == "Sim":
+   key_master = True
+   print(type(key_master))
+  
+   if key_master == True:
+      print(f"Uall Você pode seguir seu caminho pelos templo dos códigos fragmentados!!")
 else:
   print(f"Lamento sem a chave mestra você não tera chance!")  
 
