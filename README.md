@@ -15,9 +15,9 @@ Requisitos:
 
 # 🪪 1- Solicitação de credenciais para acessar o programa.
 
-O sistema deverá simular o cadrastro salvo de dois usuários:
-Login: Ana, senha: 12345
-login: João, senha: 54321
+  ➡️O sistema deverá simular o cadrastro salvo de dois usuários:
+  Login: Ana, senha: 12345
+  login: João, senha: 54321
 
 # 2- Solicitação de renda Anual:
   ➡️ O sistema deve solicitar ao usuário que insira sua renda anual.
