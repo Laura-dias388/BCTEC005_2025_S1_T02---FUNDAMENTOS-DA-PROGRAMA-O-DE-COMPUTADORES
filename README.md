@@ -21,7 +21,7 @@ arquivo com cada item separado por um comentário com a numeração do item.
 O arquivo `modulo3.py` contém:
 
 - Declaração de variáveis no início do programa.
-- Cada item implementado de forma individual, separado com comentários `# Item 1`, `# Item 2`, etc.
+- Cada item implementado de forma individual, separado com comentários `# Exercício 1`, `# Exercício 2`, etc.
 - Uso de estruturas condicionais para verificar as relações entre `A` e `B`.
 - Impressões conforme os resultados de cada teste lógico.
 
