@@ -1,4 +1,4 @@
-import learnmore.utils as utils
+import utils
 
 print("Rodando programa principal!")
 utils.hello()
