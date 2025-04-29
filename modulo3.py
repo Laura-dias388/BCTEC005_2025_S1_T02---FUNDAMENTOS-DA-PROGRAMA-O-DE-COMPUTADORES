@@ -1,7 +1,7 @@
 print("=================================================================================")
 # Exercício 1
 print("Exercício 1")
-a = 12
+a = 9
 b = 11
 
 if a > 10:
@@ -27,7 +27,7 @@ else:
 print("=================================================================================")
 # Exercício 3
 print("Exercício 3")
-a = 10
+a = 11
 b = 10
 
 if a == 10:
@@ -42,14 +42,14 @@ if b == 10:
 print("=================================================================================")
 # Exercício 4
 print("Exercício 4")
-a = 12
-b = 9
+a = 9
+b = 12
 
 if (a > 10) or (a + b == 20):
-  print("Número válido!!")
+  print("Número válido!")
 
 elif a == b:
-  print("A == B")
+  print("A é igual B")
 
 elif(a != 10) and (b != 10):
   print("Número não válido")
@@ -61,13 +61,13 @@ print("Exercício 5")
 a = 12
 b = 9
 
-if (a > 10):
+if a > 10:
   print("A > 10")
 
 else:
   print("A <= 10")
 
-if(a + b == 20):
+if a + b == 20:
   print("A + B == 20")
 else:
   print("A + B != 20")  
@@ -87,10 +87,12 @@ else:
 print("=================================================================================")
 # Exercício 7
 print("Exercício 7")
-a = 8
+a = 20
 b = 12
 
-if (a > 10) and (a + b == 20):
+if a > 10:
+  print("A é maior que 10")
+elif a + b == 20:
   print("A + B == 20")
 
 else:
@@ -102,9 +104,8 @@ print("Exercício 8")
 a = 8
 b = 5
 
-
 if (a > 10) or (a + b == 20):
-  print("A + B == 20")
+  print("A + B == 20") #Nesse caso ou A > 10 ou A + B == 20
 
 else:
   print("Número não válido")
@@ -120,10 +121,10 @@ b = 91
 if (a > 10) or (a + b == 20):
   print("Número válido!!")
 
-elif (a == b):
+elif a == b:
   print("A é igual B")
 
-elif (a != 10) and (b != 10) and (a < 10):
+elif (a != 10) and (b != 10) and (a < 10): #Para ser verdadeiro tem que atender as três regras
   print("A é menor que 10")
 
 else:
