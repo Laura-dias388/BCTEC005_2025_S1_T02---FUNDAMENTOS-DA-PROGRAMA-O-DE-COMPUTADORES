@@ -6,6 +6,7 @@ b = 11
 
 if a > 10:
   print("A > 10")
+
 if a + b == 20:
   print("A + B == 20")
 else:
@@ -61,11 +62,9 @@ print("Exercício 5")
 a = 12
 b = 9
 
-if a > 10:
+if (a > 10) or (a <= 10):
   print("A > 10")
 
-else:
-  print("A <= 10")
 
 if a + b == 20:
   print("A + B == 20")

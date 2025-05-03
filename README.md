@@ -30,37 +30,43 @@ O arquivo `modulo3.py` contém:
 ## ✅ Conteúdo dos Itens
 
 ### Item 1
-Verifica se `A > 10`. Se verdadeiro, imprime `"A > 10"`. Em seguida, verifica se `A + B == 20`, imprimindo `"A + B == 20"`. Caso contrário, imprime `"número não válido"`.
+➡️ Verifique se A é maior que 10, se verdade imprima: `"A > 10"` e verifique se o A mais B é igual a 20, se verdade imprima: `"A + B == 20"`. Caso a segunda afirmação não seja verdadeira, imprima: `"número não válido"`.
+
 
 ### Item 2
-Verifica se `A < 10`. Se verdadeiro, imprime `"A < 10"` e também se `A + B == 20`, imprimindo `"A + B == 20"`. Se nenhuma das condições for verdadeira, imprime **apenas** `"número não válido"`.
+➡️ Verifique se A é menor que 10, se verdade imprima: `"A < 10"`, e verifique se o A mais B é igual a 20, se verdade imprima: `"A + B == 20"`. Caso nenhuma das afirmações não seja verdadeira, imprima: `"número não válido"`, (obs: apenas uma impressão é permitida na saída do programa).
+ 
 
 ### Item 3
-Verifica três condições: `A == 10`, `A + B == 20` e `B == 10`. Todas as mensagens podem ser exibidas caso sejam verdadeiras.
+➡️ Verifique se A é igual a 10, se verdade imprima: `"A == 10"`, e verifique se o A mais B é igual a 20, se verdade imprima: `"A + B == 20"`. verifique se o B é igual a 10, se verdade imprima: `"B == 10"`, **(obs: todas as três impressões são permitidas na saída do programa)**.
+
 
 ### Item 4
-Verifica se `A > 10` **ou** `A + B == 20`. Se verdadeiro, imprime `"número válido"`. Caso contrário, testa se `A == B`, e se for verdadeiro, imprime `"A é igual B"`. Se ainda não for o caso, verifica se ambos `A` e `B` são diferentes de 10; se não forem, imprime `"número não válido"`.
+➡️ Verifique se A é maior que 10 **ou** se A mais B é igual a 20, se verdade imprima: `"número válido"`. Caso as afirmações não sejam verdadeiras, verificar se A é igual B, caso verdade imprima: **(A é igual B)**; caso contrario: verificar se A e B são diferentes de 10; caso não seja verdade imprima: `"número não válido"`. 
+
 
 ### Item 5
-Verifica se `A > 10`, imprime `"A > 10"` ou `"A <= 10"`. Depois, verifica se `A + B == 20`, imprimindo `"A + B == 20"` ou `"A + B != 20"`.
+➡️ Verifique se A é maior que 10, se verdade imprima: `"A > 10"` caso não seja, imprima: `"A <= 10"`. Verifique se A mais B é igual a 20, se verdadeiro, imprima: `"A + B == 2"`, caso não seja imprima: `"A + B != 20"`.
+
 
 ### Item 6
-Verifica se `A > 10` **e** `A + B == 20`. Se verdadeiro, imprime `"A + B == 20"`, senão `"número não válido"`.
+➡️ Verifique se A é maior que 10 e verifique se A mais B é igual a 20, se verdadeiro, imprima: `"A + B == 20"`. Caso as afirmações não forem verdadeiras imprima: `"número não válido"`.
+
 
 ### Item 7
-Se `A > 10`, imprime `"A > 10"`. Caso contrário, verifica se `A + B == 20`, imprimindo `"A + B == 20"`. Se nenhuma for verdadeira, imprime `"número não válido"`.
+➡️ Verifique se A é maior que 10 se não for verifique se A mais B é igual a 20, imprima: `"A + B == 20"`. Caso A não seja maior que 10 e A mais B for diferente de 20, imprima: `"número não válido"`.
+
 
 ### Item 8
-Se `A > 10` ou `A + B == 20`, imprime a(s) mensagem(ns) correspondente(s). Se nenhuma for verdadeira, imprime `"números não válidos"`. Independentemente do resultado, sempre imprime: `"Sejam bem-vindos à disciplina de Técnicas de Programação"`.
+➡️ Verifique se A é maior que 10 imprima: `"A > 10"` ou verifique se A mais B é igual a 20, imprima: `"A + B == 20"`, caso as afirmações não sejam verdadeiras, imprima: `"números não válidos"`. Sejam as afirmações anteriores falsas ou verdadeiras imprima: `“Sejam bem-vindos à disciplina de Técnicas de Programação”`.
+
 
 ### Item 9
-Verifica se `A > 10` ou `A + B == 20`. Se uma das duas for verdadeira, imprime `"número válido"`. Caso contrário, testa:
-- Se `A == B`: imprime `"A é igual B"`.
-- Se `A < 10` e ambos `A` e `B` forem diferentes de 10: imprime `"A é menor que 10"`.
-- Senão, imprime `"número não válido"`.
+➡️ Verifique se o valor de A é maior que 10 **ou** se a soma de A e B é igual a 20. Se pelo menos uma dessas afirmações for verdadeira, imprima `"número válido"`. Caso contrário, verifique se A é igual a B. Se for verdade, imprima `"A é igual B"`. Se A e B são diferentes de 10 e A for menor que 10, imprima `"A é menor que 10"`. Caso nenhuma das afirmações anteriores seja verdadeira, imprima `"número não válido"`.
+
 
 ### Item 10
-Se `A > 10` ou `A + B == 20`, imprime `"números válidos"`, senão `"número não válido"`. Independentemente do resultado, imprime: `"Olá pessoal do BCTec"`.
+➡️ Verifique se o valor de A é maior que 10 ou se a soma de A e B é igual a 20. Se pelo menos uma dessas afirmações for verdadeira, imprima `"números válidos"`. Caso contrário, imprima `"número não válido"`. Em qualquer caso, imprima `"Olá pessoal do BCTec"`
 
 ---
 
