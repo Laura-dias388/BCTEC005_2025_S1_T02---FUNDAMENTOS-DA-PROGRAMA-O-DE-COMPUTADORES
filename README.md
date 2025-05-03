@@ -98,12 +98,12 @@ Dois caminhos mágicos se cruzam. A missão é encontrar o ponto de equilíbrio.
 
 **Requisitos do programa:**
 
-x começa em 100 e decrementa.
-y começa em 1 e incrementa.
-Use while aninhados até que:
-x + 2 * y == 150
-Quando encontrado, imprima:
-`"Equilíbrio encontrado: x = X, y = Y"`
+- x começa em 100 e decrementa.
+- y começa em 1 e incrementa.
+- Use while aninhados até que:
+- x + 2 * y == 150
+- Quando encontrado, imprima:
+> `"Equilíbrio encontrado: x = X, y = Y"`
 
 ## 🚪 Fase 8: O Portal dos Dois Guardiões
 **Descrição:**
@@ -111,12 +111,12 @@ Alex precisa satisfazer duas condições mágicas ao mesmo tempo para abrir o po
 
 **Requisitos do programa:**
 
-x de 100 até 1
-y de 1 até 100
-Condições:
-abs(x - y) < 5
-x * y > 3000
-`Quando ambas forem verdadeiras, abra o portal.`
+- x de 100 até 1
+- y de 1 até 100
+- Condições:
+- abs(x - y) < 5
+- x * y > 3000
+> `Quando ambas forem verdadeiras, abra o portal.`
 
 ## 🌌 Fase 9: O Santuário das Constelações
 **Descrição:**
@@ -124,10 +124,10 @@ Alex precisa coletar gemas em constelações, mas com energia limitada.
 
 **Requisitos do programa:**
 
-Visite 10 constelações.
-Em cada uma, colete 5 gemas.
-Energia começa em 100 e diminui 2 por gema.
-Pare se energia ≤ 0.
+- Visite 10 constelações.
+- Em cada uma, colete 5 gemas.
+- Energia começa em 100 e diminui 2 por gema.
+- Pare se energia ≤ 0.
 
 ## ⚔️ Fase 10: A Batalha contra o Guardião dos Códigos
 **Descrição:**
@@ -135,11 +135,11 @@ Alex enfrenta um guardião com múltiplas camadas de proteção.
 
 **Requisitos do programa:**
 
-Alex começa com força 100.
-Guardião tem 3 camadas, cada uma com 50 de resistência.
-A cada ataque:
-Alex perde 5 de força.
-30% de chance do ataque falhar.
-Se acertar, camada perde 10.
-Vitória: destruir as 3 camadas.
-Derrota: força de Alex chega a 0.
+- Alex começa com força 100.
+- Guardião tem 3 camadas, cada uma com 50 de resistência.
+- A cada ataque:
+- Alex perde 5 de força.
+- 30% de chance do ataque falhar.
+- Se acertar, camada perde 10.
+- Vitória: destruir as 3 camadas.
+- Derrota: força de Alex chega a 0.
