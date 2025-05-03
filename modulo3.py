@@ -48,7 +48,7 @@ print("=========================================================================
 # Exercício 4
 print("Exercício 4")
 a = 9
-b = 12
+b = 11
 
 if (a > 10) or (a + b == 20):
   print("Número válido!")
@@ -94,16 +94,30 @@ print("=========================================================================
 
 # Exercício 7
 print("Exercício 7")
-a = 20
+a = 80
 b = 12
 
-if a > 10:
-  print("A é maior que 10")
-elif a + b == 20:
-  print("A + B == 20")
-
+if a < 10:
+  if a + b == 20:
+   print("A + B == 20")
 else:
-  print("Número não válido")
+  print("Número não válido!")
+
+# if(a < 10) and (a + b != 20):
+#   print("Número não válido")
+
+# print("Exercício 7")
+# a = 20
+# b = 12
+
+# if a > 10:
+#   print("A é maior que 10")
+# elif a + b == 20:
+#   print("A + B == 20")
+
+# else:
+#   print("Número não válido")
+
 
 print("=================================================================================")
 
