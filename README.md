@@ -103,7 +103,7 @@ Dois caminhos mágicos se cruzam. A missão é encontrar o ponto de equilíbrio.
 - Use while aninhados até que:
 - x + 2 * y == 150
 - Quando encontrado, imprima:
-> `"Equilíbrio encontrado: x = X, y = Y"`
+  > `"Equilíbrio encontrado: x = X, y = Y"`
 
 ## 🚪 Fase 8: O Portal dos Dois Guardiões
 **Descrição:**
@@ -116,7 +116,7 @@ Alex precisa satisfazer duas condições mágicas ao mesmo tempo para abrir o po
 - Condições:
 - abs(x - y) < 5
 - x * y > 3000
-> `Quando ambas forem verdadeiras, abra o portal.`
+  > `Quando ambas forem verdadeiras, abra o portal.`
 
 ## 🌌 Fase 9: O Santuário das Constelações
 **Descrição:**
@@ -143,3 +143,5 @@ Alex enfrenta um guardião com múltiplas camadas de proteção.
 - Se acertar, camada perde 10.
 - Vitória: destruir as 3 camadas.
 - Derrota: força de Alex chega a 0.
+
+  > `Derrotar o guardião dos códigos é sua missão, vamos!!`
