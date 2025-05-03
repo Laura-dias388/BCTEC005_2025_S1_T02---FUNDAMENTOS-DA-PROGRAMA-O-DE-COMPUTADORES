@@ -1,4 +1,5 @@
 print("=================================================================================")
+
 # Exercício 1
 print("Exercício 1")
 a = 9
@@ -13,6 +14,7 @@ else:
   print("Número não válido")  
 
 print("=================================================================================")
+
 # Exercício 2
 print("Exercício 2")
 a = 20
@@ -26,9 +28,10 @@ else:
   print("Número não válido")
 
 print("=================================================================================")
+
 # Exercício 3
 print("Exercício 3")
-a = 11
+a = 10
 b = 10
 
 if a == 10:
@@ -41,6 +44,7 @@ if b == 10:
   print("B == 10")
 
 print("=================================================================================")
+
 # Exercício 4
 print("Exercício 4")
 a = 9
@@ -57,14 +61,16 @@ elif(a != 10) and (b != 10):
 
 
 print("=================================================================================")
+
 # Exercício 5
 print("Exercício 5")
 a = 12
 b = 9
 
-if (a > 10) or (a <= 10):
+if (a > 10):
   print("A > 10")
-
+else:
+  print("A <= 10")
 
 if a + b == 20:
   print("A + B == 20")
@@ -72,6 +78,7 @@ else:
   print("A + B != 20")  
 
 print("=================================================================================")
+
 # Exercício 6
 print("Exercício 6")
 a = 12
@@ -84,6 +91,7 @@ else:
   print("Número não válido")
 
 print("=================================================================================")
+
 # Exercício 7
 print("Exercício 7")
 a = 20
@@ -98,24 +106,41 @@ else:
   print("Número não válido")
 
 print("=================================================================================")
+
 # Exercício 8
 print("Exercício 8")
 a = 8
 b = 5
 
-if (a > 10) or (a + b == 20):
-  print("A + B == 20") #Nesse caso ou A > 10 ou A + B == 20
+if (a > 10):
+  print("A > 10")
+
+if(a + b == 20):
+  print("A + B == 20") 
 
 else:
-  print("Número não válido")
+  print("Número não válidos")
 
-print("Sejam bem-vindos à disciplina de Técnicas de Programação.")
+print("Sejam bem-vindos à disciplina de Técnicas de Programação.") # independe das condições anteriores
+
+# a = 8
+# b = 5
+
+# if (a > 10) or (a + b == 20):
+#   print("A + B == 20") #Nesse caso ou A > 10 ou A + B == 20
+
+# else:
+#   print("Número não válido")
+
+# print("Sejam bem-vindos à disciplina de Técnicas de Programação.") 
+
 
 print("=================================================================================")
+
 # Exercício 9
 print("Exercício 9")
-a = 10
-b = 91
+a = 8
+b = 22
 
 if (a > 10) or (a + b == 20):
   print("Número válido!!")
@@ -130,6 +155,7 @@ else:
   print("Número não válido!!")  
 
 print("=================================================================================")
+
 # Exercício 10
 print("Exercício 10")
 a = 8

@@ -46,7 +46,7 @@ O arquivo `modulo3.py` contém:
 
 
 ### Item 5
-➡️ Verifique se A é maior que 10, se verdade imprima: `"A > 10"` caso não seja, imprima: `"A <= 10"`. Verifique se A mais B é igual a 20, se verdadeiro, imprima: `"A + B == 2"`, caso não seja imprima: `"A + B != 20"`.
+➡️ Verifique se A é maior que 10, se verdade imprima: `"A > 10"` caso não seja, imprima: `"A <= 10"`. Verifique se A mais B é igual a 20, se verdadeiro, imprima: `"A + B == 20"`, caso não seja imprima: `"A + B != 20"`.
 
 
 ### Item 6
