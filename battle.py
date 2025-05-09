@@ -143,8 +143,11 @@ while constellation > 0:
     energy = force
 
     print(f"Coletou 5 gemas! Sua energia está em: {energy}")
+
     if(energy <= 0):
         print("Alex não pode mais coletar!!")
+        constellation = 0
+    
 
 print("=======================================================================================")
 print("Exercício 9")
