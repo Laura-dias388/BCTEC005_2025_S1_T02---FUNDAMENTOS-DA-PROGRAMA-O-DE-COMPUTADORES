@@ -54,11 +54,10 @@ Alex chega a uma escada mágica que só desaparece quando ele atingir o degrau i
 Alex precisa coletar pedras mágicas em 10 pontos da galeria.
 
 **Requisitos do programa:**
-- Use um `for` para iterar por 10 pontos de coleta.
-- Para cada ponto, imprima:
-  > `"Ponto de coleta: x - número de pedras coletadas: y!"`
-- Ao final, imprima:
-  > `"O total de pedras luminosas foram coletadas!"`
+● Imprima a coleta de cada pedra usando uma repetição (for).
+● Para cada ponto de coleta imprima: quantas pedras foram coletadas? apresente o total de 
+pedras coletadas por ponto de coleta imprima: `"Ponto de coleta: x - número de pedras coletadas: y!"` (substituindo: x pelo ponto de coleta y pelo número da pedra, da iteração).
+● Ao final, imprima: `"O total de pedras luminosas foram coletadas!`
 
 ---
 
@@ -68,68 +67,72 @@ Alex precisa coletar pedras mágicas em 10 pontos da galeria.
 Alex precisa gerar as tabuadas mágicas de 1 até 10 usando `while` aninhados.
 
 **Requisitos do programa:**
-- `while` externo: de 1 até 10 (número da tabuada).
-- `while` interno: multiplica de 1 até 10.
-- Exiba os resultados de cada multiplicação.
-
+● Para cada número de 1 a 10 (representando as tábuas mágicas),
+● Alex precisa listar a multiplicação de 1 a 10 para cada número.
+● Use dois while aninhados:
+○ O while externo controla o número da tabuada (1 até 5).
+○ O while interno gera a multiplicação de 1 a 10 para cada número.
 ---
 
-## 🔐 Fase 6: Cofre Codificado com Adivinhação
+## 🔐 Fase 5: Cofre Codificado com Adivinhação
 
 **Descrição:**  
 Alex precisa acertar o número da chave e o código de segurança para abrir o cofre.
 
 **Requisitos do programa:**
-- Pergunte: `"Digite o número da chave (entre 1 e 10):"`
-- Enquanto a chave estiver incorreta, repita a pergunta.
-- Ao acertar, pergunte:
-  > `"Digite o código de segurança:"`
-- Quando ambos estiverem corretos, imprima:
-  > `"Cofre aberto com sucesso! Tesouro liberado!"`
+● Pergunte para Alex: 
+  > `"Digite o número da chave (entre 1 e 10):"`
+● Enquanto a chave não for correta, continue perguntando.
+● Quando acertar a chave correta, entre em um novo while:
+● Pergunte:
+  > `"Digite o código de segurança:"` Enquanto o código não for correto, continue perguntando.
+● Quando acertar o código, imprima: 
+  > `"Cofre aberto com sucesso! Tesouro liberado!`
 
 **Dica:**
 
 import random
 numero_aleatorio = random.randint(1, 10)
 
-## 🌬️ Fase 7: O Enigma dos Dois Caminhos
+## 🌬️ Fase 6: O Enigma dos Dois Caminhos
 **Descrição:**
 Dois caminhos mágicos se cruzam. A missão é encontrar o ponto de equilíbrio.
 
 **Requisitos do programa:**
 
-- x começa em 100 e decrementa.
-- y começa em 1 e incrementa.
-- Use while aninhados até que:
-- x + 2 * y == 150
-- Quando encontrado, imprima:
-  > `"Equilíbrio encontrado: x = X, y = Y"`
+● Inicialize x com 100 e y com 1.
+● Utilize dois while aninhados:
+● O primeiro while decrementa x de 1 em 1.
+● Dentro dele, um segundo while incrementa y de 1 em 1.
+● A condição para parar os dois laços é: Equação mágica: **x + 2 * y = 150**
+● Quando a equação for satisfeita, imprima:
+   > `"Equilíbrio encontrado: imprima o valores de x e y"`.
+E finalize o programa.
 
-## 🚪 Fase 8: O Portal dos Dois Guardiões
+## 🚪 Fase 7: O Portal dos Dois Guardiões
 **Descrição:**
 Alex precisa satisfazer duas condições mágicas ao mesmo tempo para abrir o portal.
 
 **Requisitos do programa:**
 
-- x de 100 até 1
-- y de 1 até 100
-- Condições:
-- abs(x - y) < 5
-- x * y > 3000
-  > `Quando ambas forem verdadeiras, abra o portal.`
+Faça um programa para o valor de x varie de 100 até 1 e y varie de 1 até 100, faça isso até que: 
+● A diferença absoluta entre x e y seja menor que **5: (x - y)< 5**
+● O produto de x por y seja um número maior que **3000: (x * y > 3000)**
 
-## 🌌 Fase 9: O Santuário das Constelações
+## 🌌 Fase 8: O Santuário das Constelações
 **Descrição:**
 Alex precisa coletar gemas em constelações, mas com energia limitada.
 
 **Requisitos do programa:**
 
-- Visite 10 constelações.
-- Em cada uma, colete 5 gemas.
-- Energia começa em 100 e diminui 2 por gema.
-- Pare se energia ≤ 0.
+● Visitar 10 constelações diferentes.
+● Em cada constelação, coletar pelo menos 5 gemas.
+● Só que há um desafio extra: Alex tem uma energia limitada. 
+● Ele começa com energia = 100.
+● Cada vez que ele coleta uma gema, perde 2 pontos de energia.
+● Se a energia de Alex chegar a zero ou menos, ele não pode mais coletar.
 
-## ⚔️ Fase 10: A Batalha contra o Guardião dos Códigos
+## ⚔️ Fase 9: A Batalha contra o Guardião dos Códigos
 **Descrição:**
 Alex enfrenta um guardião com múltiplas camadas de proteção.
 
