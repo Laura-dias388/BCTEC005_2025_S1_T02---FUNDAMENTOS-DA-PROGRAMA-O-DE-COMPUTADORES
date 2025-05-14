@@ -1,0 +1,101 @@
+data,categoria,valor,responsável
+2023-03-02,Alimentação,2280.64,Fernanda
+2023-01-01,Consultoria,1234.5,Fernanda
+2023-02-01,Cursos,312.38,Bruno
+2023-01-29,Alimentação,1865.98,Bruno
+2023-03-12,Transporte,501.94,Ana
+2023-02-13,Material de Escritório,868.69,Fernanda
+2023-01-25,Hospedagem,1214.23,Ana
+2023-03-11,Alimentação,1000.61,Bruno
+2023-01-03,Alimentação,1375.36,João
+2023-02-27,Hospedagem,956.2,Carla
+2023-01-12,Consultoria,1997.04,Carla
+2023-01-26,Cursos,2067.47,João
+2023-02-01,Cursos,2113.06,Carla
+2023-01-14,Cursos,2230.33,Fernanda
+2023-01-08,Material de Escritório,749.44,Ana
+2023-01-25,Alimentação,1782.4,Ana
+2023-02-09,Consultoria,1505.23,Bruno
+2023-03-26,Alimentação,824.59,Bruno
+2023-02-26,Alimentação,2215.57,Carla
+2023-03-02,Alimentação,1065.44,Fernanda
+2023-01-10,Alimentação,1870.88,João
+2023-04-01,Transporte,2179.36,Carla
+2023-01-03,Cursos,787.26,Carla
+2023-01-24,Hospedagem,2356.62,João
+2023-03-03,Hospedagem,1445.92,Fernanda
+2023-01-29,Cursos,326.33,Ana
+2023-02-26,Transporte,2393.5,João
+2023-02-01,Transporte,948.38,Bruno
+2023-01-21,Material de Escritório,2385.74,Carla
+2023-03-05,Transporte,1930.11,Ana
+2023-03-05,Cursos,1646.98,Bruno
+2023-01-31,Hospedagem,2082.82,Fernanda
+2023-01-20,Alimentação,1936.66,Ana
+2023-03-21,Transporte,732.48,Carla
+2023-01-14,Hospedagem,1800.04,Carla
+2023-02-12,Hospedagem,2269.19,João
+2023-01-22,Alimentação,775.33,Bruno
+2023-02-11,Alimentação,2207.04,Fernanda
+2023-03-16,Material de Escritório,2096.62,João
+2023-01-08,Consultoria,2419.1,Bruno
+2023-03-09,Alimentação,706.07,Bruno
+2023-01-14,Cursos,240.78,Bruno
+2023-02-27,Alimentação,79.05,João
+2023-03-18,Cursos,1847.37,Carla
+2023-01-26,Material de Escritório,883.25,Carla
+2023-03-10,Material de Escritório,129.57,Carla
+2023-03-13,Material de Escritório,713.76,Carla
+2023-03-11,Hospedagem,225.0,Carla
+2023-03-09,Cursos,1437.96,Ana
+2023-02-11,Cursos,2048.5,Fernanda
+2023-01-16,Hospedagem,1278.25,Bruno
+2023-03-12,Cursos,910.26,João
+2023-01-10,Hospedagem,2059.84,João
+2023-01-15,Material de Escritório,843.38,João
+2023-02-08,Hospedagem,1301.38,Ana
+2023-01-06,Transporte,2372.16,Ana
+2023-01-30,Transporte,1650.03,Bruno
+2023-03-10,Cursos,804.76,Bruno
+2023-01-22,Transporte,2368.81,Carla
+2023-01-24,Transporte,675.97,Carla
+2023-01-26,Hospedagem,2395.4,Carla
+2023-03-04,Material de Escritório,2256.48,Ana
+2023-03-13,Cursos,1614.88,Fernanda
+2023-02-08,Material de Escritório,199.88,João
+2023-03-11,Material de Escritório,630.91,Ana
+2023-01-04,Hospedagem,538.66,Ana
+2023-02-16,Transporte,1697.79,Ana
+2023-03-01,Hospedagem,1011.14,Bruno
+2023-03-28,Cursos,1808.76,Ana
+2023-02-22,Consultoria,1242.52,Fernanda
+2023-02-06,Hospedagem,322.05,Ana
+2023-03-13,Transporte,734.5,Ana
+2023-03-01,Consultoria,1728.75,Carla
+2023-03-22,Consultoria,719.34,Fernanda
+2023-03-11,Hospedagem,2047.25,Ana
+2023-03-21,Consultoria,872.03,Bruno
+2023-02-20,Hospedagem,552.01,Bruno
+2023-03-26,Alimentação,1787.88,João
+2023-01-04,Consultoria,1612.69,Carla
+2023-01-15,Consultoria,2256.89,Fernanda
+2023-01-09,Alimentação,995.02,Fernanda
+2023-02-28,Hospedagem,556.73,Ana
+2023-01-20,Alimentação,1979.84,Ana
+2023-02-11,Alimentação,100.4,Carla
+2023-03-28,Material de Escritório,2320.39,Bruno
+2023-03-30,Transporte,2323.71,Fernanda
+2023-01-02,Material de Escritório,2180.72,Bruno
+2023-01-24,Material de Escritório,2453.56,Bruno
+2023-01-31,Transporte,355.38,Carla
+2023-02-04,Consultoria,1785.67,Fernanda
+2023-02-21,Alimentação,723.27,Ana
+2023-02-06,Hospedagem,157.12,Fernanda
+2023-01-28,Material de Escritório,520.93,Ana
+2023-03-24,Transporte,2051.64,Ana
+2023-02-18,Hospedagem,851.89,Ana
+2023-03-27,Cursos,1389.48,Bruno
+2023-01-09,Cursos,608.57,Ana
+2023-01-21,Material de Escritório,644.74,João
+2023-02-20,Consultoria,1005.85,Carla
+2023-03-15,Hospedagem,1686.81,Ana
