@@ -7,8 +7,7 @@ Exercícios do BCTec  FUNDAMENTOS DA PROGRAMAÇÃO DE COMPUTADORES
 ## Trabalho Prático – Simulador Estatístico de Partidas de Futebol com Pandas e Estruturas de Repetição
 
 Objetivo:
-Você deverá construir um programa em Python capaz de analisar partidas de futebol a partir de um **arquivo .csv** e simular o vencedor da partida com base em força de ataque derivada de uma estrutura de repetição. Além disso, o programa deverá realizar análises estatísticas detalhadas da partida utilizando
-os dados disponíveis na planilha. Este trabalho tem por finalidade exercitar estruturas de repetição **(for, while)**, estruturas de decisão (**if/else)**, uso da biblioteca pandas, e criação de fórmulas personalizadas.
+Você deverá construir um programa em Python capaz de analisar partidas de futebol a partir de um **arquivo .csv** e simular o vencedor da partida com base em força de ataque derivada de uma estrutura de repetição. Além disso, o programa deverá realizar análises estatísticas detalhadas da partida utilizando os dados disponíveis na planilha. Este trabalho tem por finalidade exercitar estruturas de repetição **(for, while)**, estruturas de decisão (**if/else)**, uso da biblioteca pandas, e criação de fórmulas personalizadas.
 
 ## Fonte de dados:
 `Utilize o arquivo partidas_futebol_sem_gols.csv, que contém as seguintes colunas:`
