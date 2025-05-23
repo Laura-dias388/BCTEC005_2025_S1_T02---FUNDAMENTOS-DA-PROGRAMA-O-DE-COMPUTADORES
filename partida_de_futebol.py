@@ -20,7 +20,6 @@ for indice, conteudo_linha in df.iterrows():
         aproveitamento_casa = 0
         aproveitamento_fora = 0
         agressividade = 0
-        # diferenca_escanteios = 0
         ipo_casa = 0
         ipo_fora = 0
         pressao_tatica_casa = 0
@@ -139,14 +138,3 @@ for indice, conteudo_linha in df.iterrows():
         print(f"O time {conteudo_linha['TimeFora']} conseguiu {contador_ciclos_fora} ciclos de ataque!")
 
 print("=============================================================================================")
-
-
-
-
-# numero_aleatorio = random.randint(1, 10)
-# print(numero_aleatorio)  # Imprime um número aleatório entre 1 e 10 (inclusive)
-
-# lista = ["1", "2", "3", "4"]
-
-# for i in lista:
-#     print(i[0])
