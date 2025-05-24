@@ -114,9 +114,15 @@ for indice, conteudo_linha in df.iterrows():
 
         ipo_casa = conteudo_linha["Impedimentos_Casa"] / (conteudo_linha["Chutes_Casa"] + conteudo_linha["Escanteios_Casa"] + 1)
         print(f"O Índice de Pressa Ofensiva (IPO) do {conteudo_linha['TimeCasa']} foi {ipo_casa:.1f}")
+        
+        print("=============================================================================================")
+        print(f"O time {conteudo_linha['TimeCasa']} teve {conteudo_linha['Impedimentos_Casa']} impedimentos!")
 
         ipo_fora = conteudo_linha["Impedimentos_Fora"] / (conteudo_linha["Chutes_Fora"] + conteudo_linha["Escanteios_Fora"] + 1)
         print(f"O Índice de Pressa Ofensiva (IPO) do {conteudo_linha['TimeFora']} foi {ipo_fora:.1f}")
+
+        print("=============================================================================================")
+        print(f"O time {conteudo_linha['TimeFora']} teve {conteudo_linha['Impedimentos_Fora']} impedimentos!")
 #=============================================================================================================================================================
         print("=============================================================================================")
         print("Parte 3: Simulação da pressão tática")
