@@ -20,7 +20,7 @@ print(tesouros)# ['anel', 'moeda', 'esmeralda', 'espelho', 'graal', 'mapa']
 print("-------------------------------------------------------------------------------")
 print("1.4")
 
-for i in range (len(tesouros)):
+for i in range(len(tesouros)):
 
   print(f"Para o índice: {i} o valor é: {tesouros[i]}")
 
@@ -150,8 +150,8 @@ print("-------------------------------------------------------------------------
 print("8.4")
 
 for i in range(len(fragmentos)):
-  if(i % 2 != 0):
-    fragmentos[i] = 0
+    if fragmentos[i] % 2 != 0:
+        fragmentos[i] = 0
 print(fragmentos)
 
 print("-------------------------------------------------------------------------------")
