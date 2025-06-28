@@ -1,89 +1,170 @@
-print("================================================================")
-import random
-print("================================================================")
-print("\033[1mExercício - 01\033[0m  - Cadastro de Shows")
-print("----------------------------------------------------------------")
-print("Cada show possui: nome, descrição, artista e gênero musical")
+print("-=" * 50)
 
-print("----------------------------------------------------------------")
-print("Deve ser associado a um dia de festival (data, preço-base e capacidade máxima)")
+show = {
+    "nome": "Tomorowland",
+    "descricao": "Festival",
+    "artista": "Charlotte",
+    "genero_musical": "Eletrônica"
+}
 
+day_festival = {
+    "data": "22/08/2025",
+    "preco_base": 2000,
+    "capacidade_maxima": 500,
+}
+resp = "S"
+total_inscritos = 0
+total_arrecadado = 0
+brindes_figure = 0
+brindes_pop_corn = 0
+brindes_choc = 0
+brindes_refri = 0
 
-print("================================================================")
-print("\033[1mExercício - 02\033[0m  - Controle de Capacidade e Vagas Disponíveis")
-
-print("----------------------------------------------------------------")
-print("Ao cadastrar ou remover vendas, o sistema atualiza automaticamente a lotação de cada dia")
-
-print("----------------------------------------------------------------")
-print("Consultas exibem somente dias com vagas remanescentes e bloqueiam vendas quando atingir a capacidade")
-
-
-print("================================================================")
-print("\033[1mExercício - 03\033[0m  - Cadastro e Validação de Cliente")
-
-print("----------------------------------------------------------------")
-print("Antes de reservar o ingresso, o usuário deve informar nome completo, CPF e, se aplicável, número de matrícula")
-
-print("----------------------------------------------------------------")
-print("Esses dados são validados (formato de CPF e campos não vazios) e vinculados à compra")
-
-
-print("================================================================")
-print("\033[1mExercício - 04\033[0m  - Seleção de Setor e Cálculo de Preço")
-print("Quatro categorias disponíveis, cada uma com capacidade e percentual de acréscimo sobre o preço-base:")
-
-print("----------------------------------------------------------------")
-print("Pista: 4 vagas, sem acréscimo, sem brinde")
-
-print("----------------------------------------------------------------")
-print("Campo: 6 vagas, acréscimo de 10%, brinde: bonequinho do BCTec.")
-
-print("----------------------------------------------------------------")
-print("Arquibancada: 5 vagas, acréscimo de 12%, brindes: bonequinho do BCTec e combo de pipoca")
-
-
-
-
-print("================================================================")
-print("\033[1mExercício - 05\033[0m  - Processamento de Pagamento")
-
-print("----------------------------------------------------------------")
-print("Opções: PIX (simulado), dinheiro, débito ou crédito. (apenas para fins de registro e simulação da forma de pagamento)")
-
-print("----------------------------------------------------------------")
-print("A forma de pagamento escolhida é armazenada junto aos dados da transação")
+setores = {
+    "Pista": {
+        "vagas": 4,
+        "acrescimo": 0,
+        "brindes": []
+    },
+    "Campo": {
+        "vagas": 6,
+        "acrescimo": 10,
+        "brindes": ["bonequinho do BCTec"]
+    },
+    "Arquibancada": {
+        "vagas": 5,
+        "acrescimo": 12,
+        "brindes": ["bonequinho do BCTec", "combo de pipoca"]
+    },
+    "VIP": {
+        "vagas": 3,
+        "acrescimo": 15,
+        "brindes": ["bonequinho do BCTec", "combo de pipoca", "refrigerante", "chocolate"]
+        }
+    }
 
 
-print("================================================================")
-print("\033[1mExercício - 06\033[0m  - Emissão de Bilhete Digital")
-print("Após pagamento, o sistema gera um bilhete contendo:")
+while True:
+    print("           -------VENDA DE INGRESSOS-------")
+    print("-=" * 30)
+    
 
-print("----------------------------------------------------------------")
-print("Dados do cliente (nome, CPF e matrícula, se houver)")
-print("----------------------------------------------------------------")
-print("Nome e data do show")
-print("----------------------------------------------------------------")
-print("Setor reservado")
-print("----------------------------------------------------------------")
-print("Valor total pago")
-print("----------------------------------------------------------------")
-print("Forma de pagamento")
-print("----------------------------------------------------------------")
-print("Lista de brindes recebidos")
+    print(f"               Show disponível {show['nome']}")
+    print(f"               Data: {day_festival['data']}")
+    print("-=" * 30)
+
+    print(" > Cadastro de cliente <")
+    cadastro = {}
+
+    cadastro["nome_completo"] = str(input("=> Digite seu nome completo: "))
+    cadastro["CPF"] = str(input("Digite seu CPF, apenas os dígitos: "))
+
+    for k, v in cadastro.items():
+        if v == "":
+            print(">> O campo não pode ficar vazio, retorne e cadastre novamente!")
+            exit()
+    if len(cadastro["CPF"]) != 11:
+        print(">> O CPF precisa ter onze dígitos, retorne e cadastre novamente!")
+        exit()
+    print(">> É estudante da BCTec?")
+    cadastro["matricula"] = str(input(">> Digite sua matrícula: "))
+    total_inscritos += 1
+
+    print("-=" * 30)
+
+    choise = str(input("=> Escolha o setor: Pista, Campo, Arquibancada ou VIP: "))
+    print(choise)
+    if choise == "Pista":
+        setores["Pista"]["vagas"] -= 1
+        vaga = setores["Pista"]["vagas"]
+        print(f"Sua escolha tem {setores['Pista']['acrescimo']} de acréscimo e nenhum brinde!")
+        valor = day_festival["preco_base"]
+        
+        total_arrecadado += valor
+
+    elif choise == "Campo":
+        setores["Campo"]["vagas"] -= 1
+        vaga = setores["Campo"]["vagas"]
+        print(f"Sua escolha tem {setores['Campo']['acrescimo']}% de acréscimo!")
+        print("-=" * 30)
+        brindes_figure += 1
+
+        percentual = (day_festival["preco_base"] * (setores["Campo"]['acrescimo'] / 100))
+        valor = percentual + day_festival["preco_base"]
+        total_arrecadado += valor
+
+        for i in setores["Campo"]["brindes"]:
+            print(f"O brinde é: {i}")
+
+    elif choise == "Arquibancada":
+        setores["Arquibancada"]["vagas"] -= 1
+        vaga = setores["Arquibancada"]["vagas"]
+        print(f"Sua escolha tem {setores['Arquibancada']['acrescimo']}% de acréscimo e tem os seguintes brindes!")
+        print("-=" * 30)
+
+        for i in setores["Arquibancada"]["brindes"]:
+            print(f"-{i}")
+        percentual = (day_festival["preco_base"] * (setores["Arquibancada"]['acrescimo'] / 100))
+        valor = percentual + day_festival["preco_base"]
+        total_arrecadado += valor
+        brindes_figure += 1
+        brindes_pop_corn += 1
+
+    elif choise == "VIP":
+        setores["VIP"]["vagas"] -= 1
+        vaga = setores["VIP"]["vagas"]
+        print(f"Sua escolha tem {setores['VIP']['acrescimo']}% de acréscimo e tem os seguintes brindes!")
+        print("-=" * 30)
+
+        for i in setores["VIP"]["brindes"]:
+            print(f"-{i}")
+        percentual = (day_festival["preco_base"] * (setores["VIP"]['acrescimo'] / 100))
+        valor = percentual + day_festival["preco_base"]
+        total_arrecadado += valor
+        brindes_figure += 1
+        brindes_pop_corn += 1
+        brindes_refri += 1
+        brindes_choc += 1
+
+    else:
+        print("É necessário escolher uma opção para prosseguir")
 
 
+   
+    print("======================================================================================")
+    print("- Opções:  PIX")
+    print("- Opções:  Dinheiro")
+    print("- Opções:  Débito")
+    print("- Opções:  Crédito")
 
-print("================================================================")
-print("\033[1mExercício - 07\033[0m  - Relatórios Administrativos")
+    pagamento = input(" >> Escolha sua forma de pagamento: ")
 
-print("----------------------------------------------------------------")
-print("Lista de inscritos por dia de festival, com dados de cada cliente")
+    print("=============EMISSÃO DO BILHETE DIGITAL===============")
 
-print("----------------------------------------------------------------")
-print("Total arrecadado por dia e no evento completo.")
+    print("-----------Cadastro realizado com sucesso!------------")
+    print(f"=> Nome: {cadastro['nome_completo']}")
+    print(f"=> CPF: {cadastro['CPF']}")
+    print(f"=> Aluno do BCTec: Matrícula => {cadastro['matricula']}")
+    print(f"=> Show: {show['nome']}")
+    print(f"=> Setor: {choise}")
+    # print(f"Preço total: {valor}")
+    print(f"=> Forma de pagamento: {pagamento}")
+    # print(f"Lista de brindes: {setores[choise]['brindes']}")
+    continuar = input("Deseja cadastrar outro cliente? (S/N): ").upper()
+    if continuar != "S":
+        break
 
-print("----------------------------------------------------------------")
-print("Quantidade distribuída de bonequinhos do BCTec, combos de pipoca, refrigerantes e chocolates")
+print("=============RELATÓRIO ADMINISTRATIVO===============")
 
-print("================================================================")
+print(f"- Total de inscritos: {total_inscritos}")
+
+for v in cadastro["nome_completo"]:
+    print(f"Nomes: {v}")
+print(f"- Total arrecadado: R$ {total_arrecadado:.2f}")
+
+print(f"- O total de bonequinhos BCTec foi {brindes_figure}")
+print(f"- O total de combo de pipoca foi {brindes_pop_corn}")
+print(f"- O total de chocolate foi {brindes_choc} e refrigerante foi {brindes_refri}")
+# print(f"- Vagas restantes por setor: {vaga}")
+for setor, dados in setores.items():
+    print(f"- {setor}: {dados['vagas']} vagas restantes")
