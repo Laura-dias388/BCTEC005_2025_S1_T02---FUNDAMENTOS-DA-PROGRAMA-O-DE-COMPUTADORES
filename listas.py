@@ -147,8 +147,9 @@ print(lista_cem)
 print("----------------------------------------------------------------")
 print("h) Verifique se o número 5 está na lista")
 
+print(lista_cem)
+
 if 5 in lista_cem:
-  
   print("O número 5 está na lista!!")
 
 else:
@@ -158,13 +159,36 @@ print("================================================================")
 print("Exercício - 03")
 print("Crie uma nova lista que contenha os quadrados dos números de 1 a 10")
 
+numeros = list(range(10))
+print(numeros)
+
+square_number = []
+
+for i in numeros:
+  number = i 
+  square_number.append(number * 4)
+print(square_number)
 
 print("================================================================")
 print("Exercício - 04")
 print("Crie uma lista contendo apenas os números pares de 1 a 20")
 
+even_number = []
+
+for i in list(range(20)):
+  if i  % 2 == 0:
+    even_number.append(i)
+print(even_number)
 
 
 print("================================================================")
 print("Exercício - 05")
 print("Crie uma lista com os elementos da lista original multiplicados por 2")
+
+multiplication_by_two = []
+
+for i in lista_cem:
+  two = i
+  multiplication_by_two.append(two * 2)
+print(f"Os elementos da lista original multiplicados por dois são: {multiplication_by_two}")
+
