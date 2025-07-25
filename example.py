@@ -13,7 +13,8 @@ resultado = somatorio(lista)
 print(f"A soma dos elementos da lista {lista} é: {resultado}")
 
 print("-=" * 50)
-print("4) Verificação de Palíndromo: Sua função deverá receber uma string e retornar True se a string for um palíndromo (lê-se da mesma forma de trás para frente) e False caso contrário.")
+print("""4) Verificação de Palíndromo: Sua função deverá receber uma string e retornar True se a string
+for um palíndromo (lê-se da mesma forma de trás para frente) e False caso contrário.""")
 
 def eh_palindromo(s):
     s = s.lower().replace(" ", "")  # Normaliza a string
@@ -27,7 +28,8 @@ else:
 
 
 print("-=" * 50)
-print("5) Fatorial: Sua função deverá receber um número inteiro e retornar o fatorial do número. O fatorial de um número n é o produto de todos os números inteiros de 1 até n.")
+print("""5) Fatorial: Sua função deverá receber um número inteiro e retornar o fatorial do número.
+       O fatorial de um número n é o produto de todos os números inteiros de 1 até n.""")
 
 def fatorial(n):
     if n == 0 or n == 1:
@@ -82,7 +84,8 @@ temperatura_fahrenheit = celsius_para_fahrenheit(temperatura_celsius)
 print(f"{temperatura_celsius}°C é igual a {temperatura_fahrenheit} °F")
 
 print("-=" * 50)
-print("9) Jogo de Adivinhação: Sua função deverá receber um número aleatório e permitir que o usuário tente adivinhar o número. A função deve informar se o pal pite está correto, se é maior ou menor que o número aleatório.")
+print("""9) Jogo de Adivinhação: Sua função deverá receber um número aleatório e permitir
+que o usuário tente adivinhar o número. A função deve informar se o pal pite está correto, se é maior ou menor que o número aleatório.""")
 
 def jogo_adivinhacao(numero_aleatorio):   
     tentativas = 0
@@ -100,7 +103,8 @@ numero_aleatorio = random.randint(1, 100)
 jogo_adivinhacao(numero_aleatorio)
 
 print("-=" * 50)
-print("10) Calculadora Simples: Sua função deverá receber dois números e uma operação (soma, subtração, multiplicação ou divisão) e retornar o resultado da operação.")
+print("""10) Calculadora Simples: Sua função deverá receber dois números e uma operação 
+(soma, subtração, multiplicação ou divisão) e retornar o resultado da operação.""")
 def calculadora(num1, num2, operacao):
     if operacao == 'soma':
         return num1 + num2
@@ -134,7 +138,8 @@ resultado_fibonacci = fibonacci(n_termos)
 print(f"A sequência de Fibonacci até o {n_termos}-ésimo termo é: {resultado_fibonacci}")
 
 print("-=" * 50)
-print("12) Anagrama: Sua função deverá receber duas strings e retornar True se as strings forem anagramas (ou seja, se contiverem as mesmas letras em ordens diferentes) e False caso contrário.")
+print("""12) Anagrama: Sua função deverá receber duas strings e retornar True se as strings
+forem anagramas (ou seja, se contiverem as mesmas letras em ordens diferentes) e False caso contrário.""")
 def sao_anagramas(s1, s2):
     return sorted(s1) == sorted(s2)
 string1 = "amor"
@@ -167,7 +172,8 @@ temperatura_celsius = fahrenheit_para_celsius(temperatura_fahrenheit)
 print(f"{temperatura_fahrenheit}°F é igual a {temperatura_celsius} °C")
 
 print("-=" * 50)
-print("15) Jogo de Adivinhação: Sua função deverá receber um número aleatório e permitir que o usuário tente adivinhar o número. A função deve informar se o palpite está correto, se é maior ou menor que o número aleatório.")
+print("""15) Jogo de Adivinhação: Sua função deverá receber um número aleatório e permitir
+que o usuário tente adivinhar o número. A função deve informar se o palpite está correto, se é maior ou menor que o número aleatório.""")
 def jogo_adivinhacao(numero_aleatorio):   
     tentativas = 0
     while True:
@@ -184,7 +190,8 @@ numero_aleatorio = random.randint(1, 100)
 jogo_adivinhacao(numero_aleatorio)
 
 print("-=" * 50)
-print("16) Calculadora Simples: Sua função deverá receber dois números e uma operação (soma, subtração, multiplicação ou divisão) e retornar o resultado da operação.")
+print("""16) Calculadora Simples: Sua função deverá receber dois números e uma operação
+(soma, subtração, multiplicação ou divisão) e retornar o resultado da operação.""")
 def calculadora(num1, num2, operacao):
     if operacao == 'soma':
         return num1 + num2
@@ -206,7 +213,8 @@ resultado_calculadora = calculadora(num1, num2, operacao)
 print(f"O resultado da {operacao} entre {num1} e {num2} é: {resultado_calculadora}")
 
 print("-=" * 50)
-print("17) Fatorial: Sua função deverá receber um número inteiro e retornar o fatorial o número. O fatorial de um número n é o produto de todos os números inteiros de 1 até n.")
+print("""17) Fatorial: Sua função deverá receber um número inteiro e retornar o fatorial o número.
+O fatorial de um número n é o produto de todos os números inteiros de 1 até n.""")
 def fatorial(n):
     if n == 0 or n == 1:
         return 1

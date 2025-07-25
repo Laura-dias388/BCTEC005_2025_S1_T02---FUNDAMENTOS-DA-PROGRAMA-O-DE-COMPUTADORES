@@ -103,36 +103,59 @@ resultado2 = pesquisa3([10, 20, 30, 40], 99)
 print(f">> {resultado2} <<")
 
 print("--" * 50)
-print("""Pesquisa por índice: Sua função deverá receber uma lista e retornar o elemento da
+print("""5) Pesquisa por índice: Sua função deverá receber uma lista e retornar o elemento da
 lista por meio de um índice informado. Seu programa deverá tratar os casos em que
 o índice não existe na lista.""")
 
-# def pesquisa2(lista, elemento):
-#   try:
-#     return lista.index(elemento)
-#   except ValueError:
-#     print("O número não exixte na lista!")
-#     return -100
-  
-# number = input("Digite um número: ")
-# print(f">> {pesquisa2([10, 20, 30, 40], number)} <<") 
+def pesquisa_por_indice(lista, indice):
+    try:
+        return lista[indice]
+    except IndexError:
+        print(f"Índice {indice} não existe na lista!")
+        return None
 
-# print(f">> {pesquisa2([10, 20, 30, 40], 90)} <<")
+lista = [10, 20, 30, 40, 50]
 
-print("--" * 50)
-def pesquisa(lista, elemento):
-  for i, value in enumerate(lista):
-    if value == elemento:
-      print(f"O número {elemento} existe na lista no índice {i}.")
-      return i
-  print(f"O número {elemento} não existe na lista!")
-  return -100
-
-print("--" * 50)
 try:
-  indice = int(input("Digite um número: "))
-  lista = [10, 20, 30, 40, 50]
-  resultado = pesquisa(lista, indice)
-  print(f"Resultado da pesquisa: {resultado}")
+    indice = int(input("Digite um índice: "))
+    resultado = pesquisa_por_indice(lista, indice)
+    if resultado is not None:
+        print(f"Elemento no índice {indice}: {resultado}")
 except ValueError:
-  print("Você deve digitar um número inteiro!")
+    print("Você deve digitar um número inteiro!")
+
+print("--" * 50)
+print("""6) Separação de valores positivos e valores negativos: Sua função deverá receber
+uma lista e deverá organizar os elementos nessa lista de forma que os números
+negativos fiquem nas primeiras posições e os números positivos fiquem na últimas
+posições.""")
+
+def valuables_organizer(value):
+  list_numbers_positive = []
+  list_numbers_negative = []
+  for i in value:
+    if i > 0:
+      list_numbers_positive.append(i)
+    else:
+      list_numbers_negative.append(i)
+
+  mega_list = list_numbers_negative + list_numbers_positive
+  mega_list.sort()
+  print(mega_list)
+
+numbers = [-2, 1, 0, -8, -100, 80, 20, -12, -18, 28]
+valuables_organizer(numbers)
+
+print("--" * 50)
+print("""7) Número aleatórios: Faça uma função que retorne uma lista com 100 números
+aleatórios.""")
+
+def numbers_aleatorys():
+  list_numbers = []
+  for _ in range(100):
+    number = random.randint(-100, 100)
+    list_numbers.append(number)
+  print(list_numbers)
+
+numbers_aleatorys()
+print("--" * 50)
